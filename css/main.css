@@ -44,7 +44,7 @@ body{
    max-width:100%;
    height:auto;
 }
-/*--------Меню сайту-------*/
+/*--------Меню сайту декстоп-------*/
 .moon-menu{
   position:fixed;
   z-index: 999;
@@ -104,6 +104,26 @@ body{
   }
   .moon-menu .navigation .menu-items li:hover a{
     border-bottom: 1px solid #ff0;
+  }
+
+/*--------Меню сайту мобілка-------*/
+  @media screen and (max-width: 700px) {
+    .moon-menu .navigation .menu-items{
+      display: none;
+    }
+    .moon-menu{
+      height:6vh;
+      line-height: 6vh;
+    }
+    .moon-menu .logo-wrapper{
+      display: block;
+      float: left;
+    }
+    .moon-menu .logo-wrapper .logo{
+      float: left;
+      margin-top: 0.2vh;
+    }
+    
   }
 /*-----------Вітальний Блок---------------*/
 .moon-header{

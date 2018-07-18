@@ -62,6 +62,7 @@ if (lastId !== id) {
 }
 });
 
+
 //===============================
 //======       Anchor      ======
 //===============================
@@ -86,7 +87,7 @@ function validate(form_id,email,name,phone) {
    var flname = document.forms[form_id].elements[name].value;
 //=========тут треба підправити валідацію імені
    if(val_flname.test(flname) == false) {
-      alert('Введіть корректне ім"`"я та прізвище');
+      alert('Введіть корректне ім"`"я');
       return false;
    }
    if(val_adress.test(address) == false) {
@@ -100,7 +101,7 @@ function validate(form_id,email,name,phone) {
 }
 
 //===============================
-//========    Оберт   ===========
+//==========   Flip   ===========
 //===============================
 $('.items-li').hover( function() {
  $(this).find('.obert').addClass('flip')
