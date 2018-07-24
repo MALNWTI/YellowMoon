@@ -134,6 +134,7 @@ body{
       float: right;
     }
     .moon-menu .navigation .menu-items{
+      background: silver;
       display: block;
       float: right;
     }
