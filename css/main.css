@@ -105,15 +105,20 @@ body{
   .moon-menu .navigation .menu-items li:hover a{
     border-bottom: 1px solid #ff0;
   }
+  .moon-menu .mobile-menu{
+    display: none;
+  }
+  .moon-menu .menu-ico{
+    display: none;
+  }
+
 
 /*--------Меню сайту мобілка-------*/
   @media screen and (max-width: 700px) {
-    .moon-menu .navigation .menu-items{
-      display: none;
-    }
     .moon-menu{
       height:6vh;
       line-height: 6vh;
+      z-index: 998;
     }
     .moon-menu .logo-wrapper{
       display: block;
@@ -123,8 +128,49 @@ body{
       float: left;
       margin-top: 0.2vh;
     }
-    
+    .moon-menu .navigation{
+      display: none;
+      float: right;
+    }
+    .moon-menu .navigation .menu-items{
+      display: block;
+      float: right;
+    }
+    .moon-menu .mobile-menu{
+      display: none;
+      float: right;
+      font-size: 2em;
+      color: black;
+    }
+    .moon-menu .menu-ico{
+      display: block;
+      padding-right: 2vh;
+      float: right;
+      font-size: 2em;
+      color: black;
+    }
+    .moon-menu .mobile-menu:checked ~ .navigation{
+        display: block;
+      }
+    @media screen and (max-width: 550px) {
+      .moon-menu .logo-wrapper .logo{
+        height:auto;
+        width:30px;
+        display:block;
+        margin-right: 0.2vh;
+        margin-top: 0.6vh;
+      }
+      .moon-menu .logo-wrapper{
+          width: 50vw;
+      }
+      .moon-menu .logo-wrapper .logo-text{
+        font-size:1.3em;
+        display:block;
+        font-family: 'Chela One', cursive;
+      }
+    }
   }
+
 /*-----------Вітальний Блок---------------*/
 .moon-header{
   height:100vh;
@@ -174,7 +220,6 @@ body{
     color:#fff;
     line-height:45px;
   }
-
 /*-------------блок about_us--------*/
 .moon-about-us{
   height: 100vh;
@@ -276,7 +321,7 @@ body{
   background: white;
 }
   .moon-portfolio .portfolio-list{
-    margin-top: 50px;
+    margin-top: 3vh;
     height: 50vh;
     width: 100%;
     padding-left: 10%;
@@ -292,7 +337,7 @@ body{
       float: left;
       margin: 0% 1.5% 1% 1.5%;
       width: 16.5vw;
-      height: 11vw;
+      height: 20vh;
       transition: all .3s ease;
       backface-visibility: hidden;
     }
@@ -340,7 +385,6 @@ body{
         bottom:0;
         right:0;
         top:0;
-        padding-top: 16%;
         text-align: center;
         background:Yellow;
         width: 100%;
@@ -361,11 +405,11 @@ body{
   @media screen and (max-width: 640px){
     .moon-portfolio .portfolio-list{
       display: block;
-      margin-top: 50px;
+      margin-top: 5vh;
       height: 60vh;
       width: 100%;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
     }
     .moon-portfolio .list-items{
       display: block;
@@ -374,11 +418,33 @@ body{
     }
     .moon-portfolio .list-items li{
       display:block;
-      width: 16.5vw;
-      height: 11vw;
+      width: 15vh;
+      height: 11vh;
+      margin: 0% 0.5% 1% 0.5%;
     }
     .moon-portfolio .list-items .down{
-      clear: left;
+      clear: right;
+    }
+    @media screen and (max-width: 530px){
+      .moon-portfolio .portfolio-list{
+        display: block;
+        margin-top: 10vh;
+        height: 50vh;
+        width: 100%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+      }
+      .moon-portfolio .list-items{
+        display: block;
+        width: 100%;
+        height: 20vh;
+      }
+      .moon-portfolio .list-items li{
+        display:block;
+        width: 35vw;
+        height: 10vh;
+        margin: 0% 1% 1% 1%;
+      }
     }
   }
 
