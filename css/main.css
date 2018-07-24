@@ -9,6 +9,7 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Chela One', cursive;
 */
 .container{
+  text-align: center;
   height: 100vh;
   width: 100%;
   display:-webkit-box;
@@ -264,6 +265,7 @@ body{
   @media screen and (max-width: 800px) and (min-width: 540px) {
     .moon-about-us .container{
       padding-top: 10vh;
+      text-align: center;
     }
     .moon-about-us .container .menu-items{
       padding-top: 10vh;
@@ -280,6 +282,7 @@ body{
   @media screen and (max-width: 539px) {
     .moon-about-us .container{
       padding-top: 0;
+      text-align: center;
     }
     .moon-about-us h1{
       font-size: 2em;
@@ -418,8 +421,8 @@ body{
     }
     .moon-portfolio .list-items li{
       display:block;
-      width: 15vh;
-      height: 11vh;
+      width: 14vh;
+      height: 10vh;
       margin: 0% 0.5% 1% 0.5%;
     }
     .moon-portfolio .list-items .down{
@@ -430,9 +433,9 @@ body{
         display: block;
         margin-top: 10vh;
         height: 50vh;
-        width: 100%;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        width: 90%;
+        padding-left: auto;
+        padding-right: auto;
       }
       .moon-portfolio .list-items{
         display: block;
@@ -441,7 +444,7 @@ body{
       }
       .moon-portfolio .list-items li{
         display:block;
-        width: 35vw;
+        width: 33vw;
         height: 10vh;
         margin: 0% 1% 1% 1%;
       }
@@ -495,12 +498,16 @@ body{
     }
   }
   @media screen and (max-width: 849px){
+    .moon-clients .container{
+      display: block;
+    }
     .moon-clients .clients-items{
-      padding-left: 30vw;
+      display: block;
       height: 20vh;
-      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 250px;
       margin-top: 20px;
-      align-items: center;
       font-size: 0.8em;
     }
     .moon-clients .clients-items .down{
